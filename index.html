@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nikolay Georgiev – Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <style>
+    .hidden-start { opacity: 0; transform: translateY(30px); transition: opacity .6s ease, transform .6s ease; }
+    .revealed     { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="#">NG.dev</a>
+    <ul class="nav-links">
+      <li><a href="#about">Über mich</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#fullstack">Fullstack</a></li>
+      <li><a href="#creative">Kreativ</a></li>
+      <li><a href="#projects">Projekte</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="pixel-grid"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Verfügbar für Projekte &amp; Kollaborationen
+      </div>
+      <h1>
+        Hey, ich bin<br>
+        <span class="name-highlight">Nikolay Georgiev</span>
+      </h1>
+      <p class="hero-subtitle">
+        Fachinformatiker für Multimedia &nbsp;·&nbsp; Game Developer &nbsp;·&nbsp; Fullstack Dev
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Projekte ansehen</a>
+        <a href="#contact"  class="btn btn-outline">Kontakt aufnehmen</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════ ABOUT ═══════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="section-label">// über mich</p>
+        <h2 class="section-title">Ausgebildeter <span>Fachinformatiker</span><br>für Multimedia</h2>
+        <div class="divider"></div>
+        <p>Ich bin Nikolay – ein leidenschaftlicher Game Developer und Fullstack-Entwickler mit Fokus auf Unity und C#. Meine Ausbildung als Fachinformatiker für Multimedia hat mir eine solide Basis gegeben, um komplexe Software- und Spieleprojekte vom Konzept bis zur fertigen Umsetzung zu realisieren.</p>
+        <p>Neben der Entwicklung bringe ich Kreativität direkt mit: Ich erstelle eigene 2D Pixel-Art-Assets und produziere Spielemusik in FL Studio – alles aus einer Hand.</p>
+        <div class="about-tags">
+          <span class="tag">Unity &amp; C#</span>
+          <span class="tag cyan">Fullstack</span>
+          <span class="tag amber">Pixel Art</span>
+          <span class="tag amber">FL Studio</span>
+        </div>
+      </div>
+      <div class="about-avatar">
+        <div class="avatar-box">
+          <div class="avatar-corner tl"></div>
+          <div class="avatar-corner tr"></div>
+          <div class="avatar-corner bl"></div>
+          <div class="avatar-corner br"></div>
+          <span style="font-size:1rem; color:var(--text-muted); font-family:'JetBrains Mono',monospace;">foto.jpg</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SKILLS ═══════════════════ -->
+<section id="skills">
+  <div class="pixel-grid"></div>
+  <div class="container">
+    <p class="section-label">// technologie-stack</p>
+    <h2 class="section-title">Meine <span>Skills</span></h2>
+    <div class="divider"></div>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-card-icon"><i class="devicon-csharp-plain colored"></i></div>
+        <h3>C# &amp; Unity</h3>
+        <p>Meine primäre Sprache. Von Gameplay-Systemen über Inventar- und KI-Logik bis hin zu vollständigen Spielprojekten.</p>
+        <div class="skill-tags">
+          <span class="tag">Unity Engine</span>
+          <span class="tag">C# OOP</span>
+          <span class="tag">WPF</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-icon"><i class="devicon-javascript-plain colored"></i></div>
+        <h3>JavaScript</h3>
+        <p>Frontend-Entwicklung, Web-Apps und interaktive Spielprojekte im Browser.</p>
+        <div class="skill-tags">
+          <span class="tag cyan">ES6+</span>
+          <span class="tag cyan">Node.js</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-icon"><i class="devicon-php-plain colored"></i></div>
+        <h3>PHP &amp; Backend</h3>
+        <p>Server-seitige Logik,APIs und Datenbankanbindung für Web-Projekte.</p>
+        <div class="skill-tags">
+          <span class="tag">PHP 8</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">API</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-icon"><i class="devicon-python-plain colored"></i></div>
+        <h3>Python</h3>
+        <p>Scripting, Automatisierung und datengetriebene Aufgaben – vielseitig einsetzbar im Entwickleralltag.</p>
+        <div class="skill-tags">
+          <span class="tag amber">Python 3</span>
+          <span class="tag amber">Scripting</span>
+          <span class="tag amber">Automation</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-icon"><i class="devicon-mysql-plain colored"></i></div>
+        <h3>Datenbanken</h3>
+        <p>Datenbankdesign, komplexe SQL-Abfragen und Integration in Applikationen.</p>
+        <div class="skill-tags">
+          <span class="tag">MySQL</span>
+          <span class="tag">Oracle DB</span>
+          <span class="tag">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-icon"><i class="devicon-git-plain colored"></i></div>
+        <h3>Tools &amp; DevOps</h3>
+        <p>Profi-Toolchain für effiziente Entwicklung und Versionskontrolle.</p>
+        <div class="skill-tags">
+          <span class="tag cyan">Git / GitHub</span>
+          <span class="tag cyan">JetBrains IDEs</span>
+          <span class="tag cyan">VS Code</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FULLSTACK ═══════════════════ -->
+<section id="fullstack">
+  <div class="container">
+    <p class="section-label">// fullstack development</p>
+    <h2 class="section-title">Von Frontend bis <span>Backend</span></h2>
+    <div class="divider"></div>
+    <p class="fullstack-intro">
+      Als Fullstack-Entwickler beherrsche ich den kompletten Stack – von responsiven, ansprechenden Benutzeroberflächen bis hin zu performanten Server-Backends und Datenbankarchitekturen.
+    </p>
+    <div class="fullstack-layout">
+      <div class="stack-column">
+        <h3>Frontend <span class="fullstack-badge">UI / UX</span></h3>
+        <div class="stack-item">
+          <i class="devicon-javascript-plain colored stack-icon"></i>
+          <div class="stack-item-text">
+            <h4>JavaScript / HTML5 / CSS3</h4>
+            <p>Moderne, responsive Weboberflächen mit sauberem Code</p>
+          </div>
+        </div>
+
+        <div class="stack-item">
+          <i class="devicon-csharp-plain colored stack-icon"></i>
+          <div class="stack-item-text">
+            <h4>WPF / C# Desktop</h4>
+            <p>Professionelle Windows-Anwendungen mit XAML &amp; Datenbindung</p>
+          </div>
+        </div>
+      </div>
+      <div class="stack-column">
+        <h3>Backend &amp; Daten <span class="fullstack-badge">Server</span></h3>
+        <div class="stack-item">
+          <i class="devicon-php-plain colored stack-icon"></i>
+          <div class="stack-item-text">
+            <h4>PHP 8</h4>
+            <p> APIs, Authentifizierung, Business-Logik</p>
+          </div>
+        </div>
+        <div class="stack-item">
+          <i class="devicon-mysql-plain colored stack-icon"></i>
+          <div class="stack-item-text">
+            <h4>MySQL / Oracle DB</h4>
+            <p>Relationale DB-Architektur, Abfragen &amp; Optimierung</p>
+          </div>
+        </div>
+        <div class="stack-item">
+          <i class="devicon-python-plain colored stack-icon"></i>
+          <div class="stack-item-text">
+            <h4>Python Scripting</h4>
+            <p>Automatisierung, Datenverarbeitung &amp; Backend-Skripte</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CREATIVE ═══════════════════ -->
+<section id="creative">
+  <div class="pixel-grid"></div>
+  <div class="container">
+    <p class="section-label">// kreative fähigkeiten</p>
+    <h2 class="section-title">Mehr als nur <span>Code</span></h2>
+    <div class="divider"></div>
+    <div class="creative-grid">
+
+      <div class="creative-card pixels">
+        <h3>2D Pixel Art &amp; Game Assets</h3>
+        <p>Ich erstelle eigenständige Spielgrafiken im Pixel-Art-Stil – vom Charakter-Sprite über Tilesets bis zu kompletten UI-Sets. Jedes Asset ist handcrafted für maximale Authentizität.</p>
+        <ul class="creative-features">
+          <li>Character Sprites &amp; Animationen</li>
+          <li>Tilesets &amp; Hintergründe</li>
+          <li>UI-Elemente &amp; Icons im Pixel-Style</li>
+          <li>Game-ready Assets für Unity &amp; andere Engines</li>
+          <li>Konzeptart &amp; Styleguides</li>
+        </ul>
+      </div>
+
+      <div class="creative-card music">
+        <h3>Spielemusikproduktion mit FL Studio</h3>
+        <p>Chiptune-Soundtracks für Indie-Games – ich produziere Musik, die perfekt zur Spielatmosphäre passt.</p>
+        <ul class="creative-features">
+          <li>Game Soundtracks &amp; OSTs</li>
+          <li>Chiptune &amp; 8-Bit Sounds</li>
+          <li>Ambient &amp; Electronic Musik</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ PROJECTS ═══════════════════ -->
+<section id="projects">
+  <div class="container">
+    <p class="section-label">// projekte</p>
+    <h2 class="section-title">Ausgewählte <span>Arbeiten</span></h2>
+    <div class="divider"></div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-icons">
+          <i class="devicon-unity-plain"></i>
+          <i class="devicon-csharp-plain colored"></i>
+        </div>
+        <div class="project-type">Unity · C#</div>
+        <h3>Cooking Game</h3>
+        <p>Ein vollständiges Unity-Spiel mit komplexem Inventarsystem, Rezeptsystem und interaktiven Spielmechaniken.</p>
+        <div class="project-stack">
+          <span class="tag">Unity</span>
+          <span class="tag">C#</span>
+          <span class="tag amber">Game Design</span>
+        </div>
+      </div>
+
+
+
+      <div class="project-card">
+        <div class="project-icons">
+          <i class="devicon-csharp-plain colored"></i>
+          <i class="devicon-mysql-plain colored"></i>
+        </div>
+        <div class="project-type">C# · WPF · SQL</div>
+        <h3>Bibliotheksverwaltung</h3>
+        <p>Vollständige Desktop-Applikation zur Verwaltung von Büchern mit professioneller, verschlüsselter SQL-Datenbankanbindung.</p>
+
+        <a href="https://github.com/SusN28/BibliothekverwaltungsSystem" target="_blank" class="btn btn-outline" style="margin-top:16px; font-size:.825rem; padding: 8px 18px;">
+          Repository
+        </a>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CONTACT ═══════════════════ -->
+<section id="contact">
+  <div class="contact-glow"></div>
+  <div class="container">
+    <p class="section-label">// kontakt</p>
+    <h2 class="section-title">Lass uns <span>zusammenarbeiten</span></h2>
+    <div class="divider" style="margin: 0 auto 20px;"></div>
+    <p class="contact-sub">
+      Ob Game-Projekt, Web-App oder kreative Kollaboration – ich freue mich über spannende Anfragen und neue Herausforderungen.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:ngeorgiev843@gmail.com" class="btn btn-primary">E-Mail schreiben</a>
+      <a href="https://github.com/SusN28"   target="_blank" class="btn btn-outline">GitHub</a>
+      <a href="https://linkedin.com/" target="_blank" class="btn btn-outline">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <span>© 2026 Nikolay Georgiev</span>
+  &nbsp;·&nbsp;
+  <span>33142 Büren</span>
+</footer>
+
+<script src="scroll-reveal.js"></script>
+<script src="music-player.js"></script>
+</body>
+</html>
