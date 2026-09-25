@@ -7,16 +7,22 @@
   <title>Nikolay Georgiev — Developer</title>
   <link rel="stylesheet" href="styles.css">
   <script src="scroll-reveal.js" defer></script>
+  <script src="i18n.js" defer></script>
 </head>
 <body>
 <header class="site-header">
   <div class="site-header-inner">
     <a class="wordmark" href="#top">Nikolay Georgiev</a>
     <nav aria-label="Hauptnavigation">
-      <a href="#about">Über mich</a>
-      <a href="#skills">Technologien</a>
-      <a href="#projects">Projekte</a>
-      <a href="#contact">Kontakt</a>
+      <a href="#about" data-i18n="nav.about">Über mich</a>
+      <a href="#skills" data-i18n="nav.skills">Technologien</a>
+      <a href="#projects" data-i18n="nav.projects">Projekte</a>
+      <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+      <div class="language-switcher">
+        <button type="button" data-lang="de">DE</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="bg">БГ</button>
+      </div>
     </nav>
   </div>
 </header>
@@ -24,136 +30,136 @@
 <main id="top">
   <section class="intro section-width">
     <div class="intro-copy">
-      <p class="eyebrow">Fachinformatiker für Multimedia · Game Developer · Fullstack Dev</p>
-      <h1>Ich entwickle Spiele, Software und Dinge, die ich selbst gern benutzen würde.</h1>
-      <p class="intro-text">Ich bin Nikolay – Game Developer und Fullstack-Entwickler mit Fokus auf Unity, C# und kreativen Projekten. Ich arbeite gern praktisch, probiere Ideen aus und baue daraus funktionierende Systeme.</p>
+      <p class="eyebrow" data-i18n="hero.eyebrow">Fachinformatiker für Multimedia · Game Developer · Fullstack Dev</p>
+      <h1 data-i18n="hero.title">Ich entwickle Spiele, Software und Dinge, die ich selbst gern benutzen würde.</h1>
+      <p class="intro-text" data-i18n="hero.text">Ich bin Nikolay – Game Developer und Fullstack-Entwickler mit Fokus auf Unity, C# und kreativen Projekten. Ich arbeite gern praktisch, probiere Ideen aus und baue daraus funktionierende Systeme.</p>
       <div class="intro-links">
-        <a class="text-link" href="#projects">Projekte ansehen</a>
-        <a class="text-link muted-link" href="#contact">Kontakt aufnehmen</a>
+        <a class="text-link" href="#projects" data-i18n="hero.viewProjects">Projekte ansehen</a>
+        <a class="text-link muted-link" href="#contact" data-i18n="hero.contact">Kontakt aufnehmen</a>
       </div>
     </div>
 
     <figure class="portrait">
-      <img src="images/nikolay-georgiev.jpg" alt="Porträt von Nikolay Georgiev">
+      <img src="images/Nikolay_NoBackground.png" alt="Porträt von Nikolay Georgiev" data-i18n-alt="alt.portrait">
     </figure>
   </section>
 
   <section id="about" class="section-width section-block split-section">
     <div>
-      <p class="section-number">01 / Über mich</p>
-      <h2>Entwicklung ist für mich nicht nur Code.</h2>
+      <p class="section-number" data-i18n="about.number">01 / Über mich</p>
+      <h2 data-i18n="about.title">Entwicklung ist für mich nicht nur Code.</h2>
     </div>
 
     <div class="copy">
-      <p>Meine Ausbildung als Fachinformatiker für Multimedia hat mir eine solide Basis gegeben, um Software- und Spieleprojekte vom Konzept bis zur Umsetzung zu begleiten.</p>
-      <p>Am meisten Spaß macht mir die Verbindung aus Technik und Gestaltung: Gameplay-Systeme, klare Oberflächen, Pixel-Art, 3D-Assets und Musik für eigene Projekte.</p>
-      <p>Ich lerne am liebsten, indem ich etwas baue. Deshalb besteht mein Portfolio aus echten Übungen, Prototypen und Anwendungen, an denen ich Architektur, Design und Problemlösung weiterentwickle.</p>
+      <p data-i18n="about.p1">Meine Ausbildung als Fachinformatiker für Multimedia hat mir eine solide Basis gegeben, um Software- und Spieleprojekte vom Konzept bis zur Umsetzung zu begleiten.</p>
+      <p data-i18n="about.p2">Am meisten Spaß macht mir die Verbindung aus Technik und Gestaltung: Gameplay-Systeme, klare Oberflächen, Pixel-Art, 3D-Assets und Musik für eigene Projekte.</p>
+      <p data-i18n="about.p3">Ich lerne am liebsten, indem ich etwas baue. Deshalb besteht mein Portfolio aus echten Übungen, Prototypen und Anwendungen, an denen ich Architektur, Design und Problemlösung weiterentwickle.</p>
     </div>
   </section>
 
   <section id="skills" class="section-width section-block">
     <div class="section-heading">
-      <p class="section-number">02 / Technologien</p>
-      <h2>Werkzeuge, mit denen ich arbeite.</h2>
+      <p class="section-number" data-i18n="skills.number">02 / Technologien</p>
+      <h2 data-i18n="skills.title">Werkzeuge, mit denen ich arbeite.</h2>
     </div>
 
     <div class="skills-list">
       <article class="skill-row">
         <div class="skill-title">
           <span class="skill-icon icon-csharp"><i class="devicon-csharp-plain"></i></span>
-          <span class="skill-name">C# &amp; WPF</span>
+          <span class="skill-name" data-i18n="skill.csharp">C# & WPF</span>
         </div>
-        <span class="skill-description">Desktop-Anwendungen mit WPF, MVVM, APIs und Business-Logik.</span>
+        <span class="skill-description" data-i18n="skill.csharp.desc">Desktop-Anwendungen mit WPF, MVVM, APIs und Business-Logik.</span>
       </article>
 
       <article class="skill-row">
         <div class="skill-title">
           <span class="skill-icon icon-unity"><i class="devicon-unity-original"></i></span>
-          <span class="skill-name">Unity</span>
+          <span class="skill-name" data-i18n="skill.unity">Unity</span>
         </div>
-        <span class="skill-description">2D- und 3D-Spiele mit Gameplay, Quests, Inventaren, KI und Speichersystemen.</span>
+        <span class="skill-description" data-i18n="skill.unity.desc">2D- und 3D-Spiele mit Gameplay, Quests, Inventaren, KI und Speichersystemen.</span>
       </article>
 
       <article class="skill-row">
         <div class="skill-title">
           <span class="skill-icon icon-godot"><i class="devicon-godot-plain"></i></span>
-          <span class="skill-name">Godot</span>
+          <span class="skill-name" data-i18n="skill.godot">Godot</span>
         </div>
-        <span class="skill-description">Spielprototypen und Experimente mit Godot und C#.</span>
+        <span class="skill-description" data-i18n="skill.godot.desc">Spielprototypen und Experimente mit Godot und C#.</span>
       </article>
 
       <article class="skill-row">
         <div class="skill-title">
           <span class="skill-icon icon-blender"><i class="devicon-blender-original"></i></span>
-          <span class="skill-name">Blender</span>
+          <span class="skill-name" data-i18n="skill.blender">Blender</span>
         </div>
-        <span class="skill-description">3D-Modellierung, Game Assets und Vorbereitung von Modellen für Spiele.</span>
+        <span class="skill-description" data-i18n="skill.blender.desc">3D-Modellierung, Game Assets und Vorbereitung von Modellen für Spiele.</span>
       </article>
 
       <article class="skill-row">
         <div class="skill-title">
           <span class="skill-icon icon-js"><i class="devicon-javascript-plain"></i></span>
-          <span class="skill-name">JavaScript</span>
+          <span class="skill-name" data-i18n="skill.js">JavaScript</span>
         </div>
-        <span class="skill-description">Frontend-Entwicklung, Web-Apps und interaktive Browser-Projekte.</span>
+        <span class="skill-description" data-i18n="skill.js.desc">Frontend-Entwicklung, Web-Apps und interaktive Browser-Projekte.</span>
       </article>
 
       <article class="skill-row">
         <div class="skill-title">
           <span class="skill-icon icon-sql"><i class="devicon-mysql-plain"></i></span>
-          <span class="skill-name">Datenbanken</span>
+          <span class="skill-name" data-i18n="skill.sql">Datenbanken</span>
         </div>
-        <span class="skill-description">SQL, Datenbankdesign, Abfragen und Anbindung an Anwendungen.</span>
+        <span class="skill-description" data-i18n="skill.sql.desc">SQL, Datenbankdesign, Abfragen und Anbindung an Anwendungen.</span>
       </article>
 
       <article class="skill-row">
         <div class="skill-title">
           <span class="skill-icon icon-python"><i class="devicon-python-plain"></i></span>
-          <span class="skill-name">Python</span>
+          <span class="skill-name" data-i18n="skill.python">Python</span>
         </div>
-        <span class="skill-description">Scripting, Automatisierung und datengetriebene Aufgaben.</span>
+        <span class="skill-description" data-i18n="skill.python.desc">Scripting, Automatisierung und datengetriebene Aufgaben.</span>
       </article>
 
       <article class="skill-row">
         <div class="skill-title">
           <span class="skill-icon icon-git"><i class="devicon-git-plain"></i></span>
-          <span class="skill-name">Tools &amp; Versionskontrolle</span>
+          <span class="skill-name" data-i18n="skill.tools">Tools & Versionskontrolle</span>
         </div>
-        <span class="skill-description">Git, Entwicklungsumgebungen und ein strukturierter Workflow.</span>
+        <span class="skill-description" data-i18n="skill.tools.desc">Git, Entwicklungsumgebungen und ein strukturierter Workflow.</span>
       </article>
 
       <article class="skill-row">
         <div class="skill-title">
           <span class="skill-icon icon-uml">UML</span>
-          <span class="skill-name">UML &amp; Visual Paradigm</span>
+          <span class="skill-name" data-i18n="skill.uml">UML & Visual Paradigm</span>
         </div>
-        <span class="skill-description">Modellierung von Klassen-, Use-Case- und Aktivitätsdiagrammen für Softwareprojekte.</span>
+        <span class="skill-description" data-i18n="skill.uml.desc">Modellierung von Klassen-, Use-Case- und Aktivitätsdiagrammen für Softwareprojekte.</span>
       </article>
     </div>
   </section>
 
   <section id="fullstack" class="section-width section-block split-section compact-section">
     <div>
-      <p class="section-number">03 / Fullstack Development</p>
-      <h2>Vom Interface bis zur Datenbank.</h2>
+      <p class="section-number" data-i18n="fullstack.number">03 / Fullstack Development</p>
+      <h2 data-i18n="fullstack.title">Vom Interface bis zur Datenbank.</h2>
     </div>
 
     <div class="copy">
-      <p>Ich interessiere mich für den gesamten Weg eines Projekts: eine verständliche Benutzeroberfläche, gut strukturierte Logik, eine passende Datenbank und ein Workflow, der Änderungen nicht unnötig kompliziert macht.</p>
+      <p data-i18n="fullstack.intro">Ich interessiere mich für den gesamten Weg eines Projekts: eine verständliche Benutzeroberfläche, gut strukturierte Logik, eine passende Datenbank und ein Workflow, der Änderungen nicht unnötig kompliziert macht.</p>
       <ul class="plain-list">
-        <li>Moderne, responsive Weboberflächen</li>
-        <li>Professionelle Windows-Anwendungen mit XAML und Datenbindung</li>
-        <li>APIs, Authentifizierung und Business-Logik</li>
-        <li>Relationale Datenbanken, Abfragen und Optimierung</li>
-        <li>Automatisierung und datengetriebene Aufgaben</li>
+        <li data-i18n="fullstack.item1">Moderne, responsive Weboberflächen</li>
+        <li data-i18n="fullstack.item2">Professionelle Windows-Anwendungen mit XAML und Datenbindung</li>
+        <li data-i18n="fullstack.item3">APIs, Authentifizierung und Business-Logik</li>
+        <li data-i18n="fullstack.item4">Relationale Datenbanken, Abfragen und Optimierung</li>
+        <li data-i18n="fullstack.item5">Automatisierung und datengetriebene Aufgaben</li>
       </ul>
     </div>
   </section>
 
   <section id="projects" class="section-width section-block">
     <div class="section-heading">
-      <p class="section-number">04 / Projekte</p>
-      <h2>Was ich bisher gebaut habe.</h2>
+      <p class="section-number" data-i18n="projects.number">04 / Projekte</p>
+      <h2 data-i18n="projects.title">Was ich bisher gebaut habe.</h2>
     </div>
 
     <div class="project-list">
@@ -161,22 +167,22 @@
         <div class="project-row">
           <div>
             <p class="project-type">Unity · Game Development</p>
-            <h3>Quest-Spiel</h3>
+            <h3 data-i18n="project.quest.title">Quest-Spiel</h3>
           </div>
-          <p>Ein vollständiges Unity-Spiel mit einem selbst entwickelten, speicherbaren Questsystem und eigener Musik.</p>
-          <a class="repo-link" href="DEIN-QUEST-REPOSITORY-LINK" target="_blank" rel="noopener">Repository</a>
+          <p data-i18n="project.quest.text">Ein vollständiges Unity-Spiel mit einem selbst entwickelten, speicherbaren Questsystem und eigener Musik.</p>
+          <a class="repo-link" href="DEIN-QUEST-REPOSITORY-LINK" target="_blank" rel="noopener" data-i18n="project.repository">Repository</a>
         </div>
 
         <div class="project-gallery" data-gallery>
           <div class="gallery-window">
             <div class="gallery-track">
-              <img src="images/quest-01.jpg" alt="Screenshot aus dem Quest-Spiel">
-              <img src="images/quest-02.jpg" alt="Screenshot aus dem Quest-Spiel">
-              <img src="images/quest-03.jpg" alt="Screenshot aus dem Quest-Spiel">
+              <img src="images/quest-01.jpg" alt="Screenshot aus dem Quest-Spiel" data-i18n-alt="alt.quest1">
+              <img src="images/quest-02.jpg" alt="Screenshot aus dem Quest-Spiel" data-i18n-alt="alt.quest2">
+              <img src="images/quest-03.jpg" alt="Screenshot aus dem Quest-Spiel" data-i18n-alt="alt.quest3">
             </div>
           </div>
-          <button class="gallery-arrow gallery-arrow-left" type="button" data-gallery-previous aria-label="Vorheriges Bild">‹</button>
-          <button class="gallery-arrow gallery-arrow-right" type="button" data-gallery-next aria-label="Nächstes Bild">›</button>
+          <button class="gallery-arrow gallery-arrow-left" type="button" data-gallery-previous aria-label="Vorheriges Bild" data-i18n-aria="aria.previous">‹</button>
+          <button class="gallery-arrow gallery-arrow-right" type="button" data-gallery-next aria-label="Nächstes Bild" data-i18n-aria="aria.next">›</button>
         </div>
       </article>
 
@@ -184,22 +190,22 @@
         <div class="project-row">
           <div>
             <p class="project-type">C# · WPF · SQL</p>
-            <h3>Bücherverwaltung</h3>
+            <h3 data-i18n="project.books.title">Bücherverwaltung</h3>
           </div>
-          <p>Eine Desktop-Applikation zur Verwaltung von Büchern mit verschlüsselter SQL-Datenbankanbindung.</p>
-          <a class="repo-link" href="DEIN-BUECHER-REPOSITORY-LINK" target="_blank" rel="noopener">Repository</a>
+          <p data-i18n="project.books.text">Eine Desktop-Applikation zur Verwaltung von Büchern mit verschlüsselter SQL-Datenbankanbindung.</p>
+          <a class="repo-link" href="DEIN-BUECHER-REPOSITORY-LINK" target="_blank" rel="noopener" data-i18n="project.repository">Repository</a>
         </div>
 
         <div class="project-gallery" data-gallery>
           <div class="gallery-window">
             <div class="gallery-track">
-              <img src="images/books-01.jpg" alt="Screenshot der Bücherverwaltung">
-              <img src="images/books-02.jpg" alt="Screenshot der Bücherverwaltung">
-              <img src="images/books-03.jpg" alt="Screenshot der Bücherverwaltung">
+              <img src="images/books-01.jpg" alt="Screenshot der Bücherverwaltung" data-i18n-alt="alt.books1">
+              <img src="images/books-02.jpg" alt="Screenshot der Bücherverwaltung" data-i18n-alt="alt.books2">
+              <img src="images/books-03.jpg" alt="Screenshot der Bücherverwaltung" data-i18n-alt="alt.books3">
             </div>
           </div>
-          <button class="gallery-arrow gallery-arrow-left" type="button" data-gallery-previous aria-label="Vorheriges Bild">‹</button>
-          <button class="gallery-arrow gallery-arrow-right" type="button" data-gallery-next aria-label="Nächstes Bild">›</button>
+          <button class="gallery-arrow gallery-arrow-left" type="button" data-gallery-previous aria-label="Vorheriges Bild" data-i18n-aria="aria.previous">‹</button>
+          <button class="gallery-arrow gallery-arrow-right" type="button" data-gallery-next aria-label="Nächstes Bild" data-i18n-aria="aria.next">›</button>
         </div>
       </article>
 
@@ -207,38 +213,40 @@
         <div class="project-row">
           <div>
             <p class="project-type">WPF · MVVM · SQL</p>
-            <h3>Chatsystem</h3>
+            <h3 data-i18n="project.chat.title">Chatsystem</h3>
           </div>
-          <p>Ein modernes Desktop-Chatsystem mit klarer Oberfläche, strukturierter Architektur und SQL-Datenbank.</p>
-          <a class="repo-link" href="DEIN-CHAT-REPOSITORY-LINK" target="_blank" rel="noopener">Repository</a>
+          <p data-i18n="project.chat.text">Ein modernes Desktop-Chatsystem mit klarer Oberfläche, strukturierter Architektur und SQL-Datenbank.</p>
+          <a class="repo-link" href="DEIN-CHAT-REPOSITORY-LINK" target="_blank" rel="noopener" data-i18n="project.repository">Repository</a>
         </div>
 
         <div class="project-gallery" data-gallery>
           <div class="gallery-window">
             <div class="gallery-track">
-              <img src="images/chat-01.jpg" alt="Screenshot des Chatsystems">
-              <img src="images/chat-02.jpg" alt="Screenshot des Chatsystems">
-              <img src="images/chat-03.jpg" alt="Screenshot des Chatsystems">
+              <img src="images/image.png" alt="Screenshot des Chatsystems" data-i18n-alt="alt.chat1">
+              <img src="images/Chat.png" alt="Screenshot des Chatsystems" data-i18n-alt="alt.chat2">
+              <img src="images/Kontakte.png" alt="Screenshot des Chatsystems" data-i18n-alt="alt.chat3">
+              <img src="images/GruppeBearbeiten.png" alt="Screenshot des Chatsystems" data-i18n-alt="alt.chat4">
+              <img src="images/Settings.png" alt="Screenshot des Chatsystems" data-i18n-alt="alt.chat5">
             </div>
           </div>
-          <button class="gallery-arrow gallery-arrow-left" type="button" data-gallery-previous aria-label="Vorheriges Bild">‹</button>
-          <button class="gallery-arrow gallery-arrow-right" type="button" data-gallery-next aria-label="Nächstes Bild">›</button>
+          <button class="gallery-arrow gallery-arrow-left" type="button" data-gallery-previous aria-label="Vorheriges Bild" data-i18n-aria="aria.previous">‹</button>
+          <button class="gallery-arrow gallery-arrow-right" type="button" data-gallery-next aria-label="Nächstes Bild" data-i18n-aria="aria.next">›</button>
         </div>
       </article>
     </div>
   </section>
 
   <section id="contact" class="section-width section-block contact-section">
-    <p class="section-number">05 / Kontakt</p>
-    <h2>Du hast eine Idee?</h2>
-    <p>Ob Game-Projekt, Web-App oder kreative Kollaboration – ich freue mich über spannende Anfragen und neue Herausforderungen.</p>
-    <a class="contact-email" href="mailto:DEINE-MAIL-ADRESSE">DEINE-MAIL-ADRESSE</a>
+    <p class="section-number" data-i18n="contact.number">05 / Kontakt</p>
+    <h2 data-i18n="contact.title">Du hast eine Idee?</h2>
+    <p data-i18n="contact.text">Ob Game-Projekt, Web-App oder kreative Kollaboration – ich freue mich über spannende Anfragen und neue Herausforderungen.</p>
+    <a class="contact-email" href="mailto:ngeorgiev843@gmail.com">ngeorgiev843@gmail.com</a>
   </section>
 </main>
 
 <footer class="section-width">
-  <span>© 2026 Nikolay Georgiev</span>
-  <a href="#top">Nach oben</a>
+  <span data-i18n="footer.copyright">© 2026 Nikolay Georgiev</span>
+  <a href="#top" data-i18n="footer.top">Nach oben</a>
 </footer>
 </body>
 </html>
